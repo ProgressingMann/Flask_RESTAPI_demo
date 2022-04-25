@@ -4,6 +4,17 @@ This is a basic flask application which provides demo for the following HOW TOs:
 1) How to use flask_smorest, flask_restful and marshmallow along with flask module to create REST APIs. 
 2) How to perform unit and integration testing with pytest.
 
+### Follow the below steps linearly to start run the application
+<ol>
+      <li> Clone this repository to your local storage.</li>
+      <li> Open your terminal and navigate to the directory where you cloned this repository.
+      <li> Type *pip install -r requirements.txt* in your termial and hit enter. This downloads all the dependencies required for the flask app to function             properly.
+      <li> Move to the 'app' folder in the repository.
+      <li> Type python app.py to spin the server and this should start your flask application :).
+            
+<ol>
+
+
 The code provides 3 endpoints: <br>
 **1) '/', (GET)** : a basic home page to get started with
 
