@@ -4,7 +4,7 @@
   <li> We will first need to install the aws-elastic-bean (eb) CLI, if it is not already installed. Instructions on how to install eb CLI are provided 
     <a href="https://github.com/aws/aws-elastic-beanstalk-cli-setup">here</a>.
   <li> After installing the eb-CLI, clone this repository to the local machine, and let's say this directory is named as aws_demo. 
-  <li> Open the terminal and go to the directory where this repository is cloned, aws_demo.
+  <li> Open the terminal and go to the directory where this repository is cloned (aws_demo as mentioned in step 2).
   <li> <strong>NOTE:</strong> We may need to change the folder structure where we would move all the files
         from the app folder to the aws_demo folder and then get rid of the app folder.
   <li> Create a .ebignore file to tell the aws-eb which files not to include.
