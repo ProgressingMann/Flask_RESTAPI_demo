@@ -10,10 +10,10 @@ The code provides 3 endpoints:
 2) '/skills/reverse-skill-title' - POST : 
       This endpoint requires input data in **JSON** body with key as 'skill_title'.
 
-3) '/get_data' - POST : 
-      This endpoint requires input data in **JSON** body with key as 'city_name'.
-      Responses :-
-          a) You will get a 404 response if the JSON body won't contain the key 'city_name'.
-          b) You will get a 404 response if the JSON body contains the key 'city_name' but its value (city name) is not present in the data.csv.
-          c) You will get a 200 response with Job groups and their respective employment data if key 'city_name' is present and its value 
+3) '/get_data' - POST : <br>
+      This endpoint requires input data in **JSON** body with key as 'city_name'.<br>
+      Responses :-<br>
+          a) You will get a 404 response if the JSON body won't contain the key 'city_name'.<br>
+          b) You will get a 404 response if the JSON body contains the key 'city_name' but its value (city name) is not present in the data.csv.<br>
+          c) You will get a 200 response with Job groups and their respective employment data if key 'city_name' is present and its value <br>
              is also present in the data.csv.
