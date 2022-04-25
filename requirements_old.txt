@@ -1,0 +1,8 @@
+flask                  
+flask-marshmallow         
+flask-restful             
+flask-smorest
+marshmallow     
+pytest
+pytest-flask
+# python
