@@ -5,12 +5,12 @@ This is a basic flask application which provides demo for the following HOW TOs:
 2) How to perform unit and integration testing with pytest.
 
 The code provides 3 endpoints:
-1) '/' - GET, a basic home page to get started with
+1) '/', (GET) : a basic home page to get started with
 
-2) '/skills/reverse-skill-title' - POST : 
+2) '/skills/reverse-skill-title', (POST) : <br> 
       This endpoint requires input data in **JSON** body with key as 'skill_title'.
 
-3) '/get_data' - POST : <br>
+3) '/get_data', (POST) : <br>
       This endpoint requires input data in **JSON** body with key as 'city_name'.<br>
       Responses :-<br>
           a) You will get a 404 response if the JSON body won't contain the key 'city_name'.<br>
