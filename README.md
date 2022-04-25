@@ -4,7 +4,7 @@ This is a basic flask application which provides demo for the following HOW TOs:
 1) How to use flask_smorest, flask_restful and marshmallow along with flask module to create REST APIs. 
 2) How to perform unit and integration testing with pytest.
 
-The code provides 3 endpoints:
+The code provides 3 endpoints: <br>
 **1) '/', (GET)** : a basic home page to get started with
 
 **2) '/skills/reverse-skill-title', (POST)** : <br> 
