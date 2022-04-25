@@ -8,7 +8,7 @@ This is a basic flask application which provides demo for the following HOW TOs:
 <ol>
       <li> Clone this repository to your local storage.</li>
       <li> Open your terminal and navigate to the directory where you cloned this repository.</li>
-      <li> Type *pip install -r requirements.txt* in your termial and hit enter. This downloads all the dependencies required for the flask app to function             properly.</li>
+      <li> Type <strong>pip install -r requirements.txt</strong> in your termial and hit enter. This downloads all the dependencies required for the flask app to function             properly.</li>
       <li> Move to the 'app' folder in the repository.</li>
       <li> Type python app.py to spin the server and this should start your flask application :).</li>    
 </ol>
