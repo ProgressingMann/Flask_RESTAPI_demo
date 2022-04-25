@@ -4,7 +4,7 @@ This is a basic flask application which provides demo for the following HOW TOs:
 1) How to use flask_smorest, flask_restful and marshmallow along with flask module to create REST APIs. 
 2) How to perform unit and integration testing with pytest.
 
-## Follow the below steps linearly to start run the application
+## Follow the below steps linearly to run the flask application
 <ol>
       <li> Clone this repository to your local storage.</li>
       <li> Open your terminal and navigate to the directory where you cloned this repository.</li>
@@ -12,6 +12,7 @@ This is a basic flask application which provides demo for the following HOW TOs:
       <li> Move to the 'app' folder in the repository.</li>
       <li> Type python app.py to spin the server and this should start your flask application :).</li>    
 </ol>
+
 
 ## The code provides 3 endpoints: <br>
 **1) '/', (GET)** : a basic home page to get started with
@@ -26,3 +27,9 @@ This is a basic flask application which provides demo for the following HOW TOs:
           b) You will get a 404 response if the JSON body contains the key 'city_name' but its value (city name) is not present in the data.csv. <br>
           c) You will get a 200 response with Job groups and their respective employment data if key 'city_name' is present in the JSON and its
                   value is also present in the data.csv.
+
+## Unit and Integration Test: <br>
+<ol>
+      <li> Open your terminal and navigate to the directory where this repository is cloned.</li>
+      <li> Copy the command <strong>python -m pytest -p no:warnings</strong>, paste it in your terminal and hit enter. It's that simple!
+</ol>
