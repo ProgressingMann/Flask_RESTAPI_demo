@@ -5,8 +5,8 @@
     <a href="https://github.com/aws/aws-elastic-beanstalk-cli-setup">here</a>.
   <li> After installing the eb-CLI, clone this repository to the local machine, and let's say this directory is named as aws_demo. 
   <li> Open the terminal and go to the directory where this repository is cloned, aws_demo.
-  <li> <strong>NOTE:</strong> We may need to change the folder structure where we would get rid of the app folder in the aws_demo and move all the files
-        from the app folder to the aws_demo folder.
+  <li> <strong>NOTE:</strong> We may need to change the folder structure where we would move all the files
+        from the app folder to the aws_demo folder and then get rid of the app folder.
   <li> Create a .ebignore file to tell the aws-eb which files not to track.
   <li> We will now make changes to the python files. AWS looks for the keyword <strong>application</strong> to find our flask application from our python 
        files. So to adjust with this behavior, we will <strong>change the name of our flask application from app to application in our python files.</strong> 
