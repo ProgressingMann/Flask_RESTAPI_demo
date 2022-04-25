@@ -1,4 +1,4 @@
-# Flask_RESTAPI_demo
+# Flask RESTAPI demo
 
 This is a basic flask application which provides demo for the following HOW TOs:
 1) How to use flask_smorest, flask_restful and marshmallow along with flask module to create REST APIs. 
