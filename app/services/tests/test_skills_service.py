@@ -32,8 +32,8 @@ def test_dataframe_loaded_correctly():
     df, area_codes = dp.get_data()
 
     assert type(df) == type(pd.DataFrame())
-    assert df['Total_Emp'].dtype in [np.int, int]
-    assert df['MSA_ID'].dtype in [np.int, int]
+    assert type(df['Total_Emp'][0]) in [np.int32, np.int64, np.int, int]
+    assert type(df['MSA_ID'][0]) in [np.int32, np.int64, np.int, int]
     assert df['M_Areas'].dtype == 'O'
     assert type(area_codes) == dict
     assert 'new york' in area_codes
