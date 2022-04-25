@@ -15,5 +15,5 @@ The code provides 3 endpoints: <br>
       Responses :-<br>
           a) You will get a 404 response if the JSON body won't contain the key 'city_name'.<br>
           b) You will get a 404 response if the JSON body contains the key 'city_name' but its value (city name) is not present in the data.csv.<br>
-          c) You will get a 200 response with Job groups and their respective employment data if key 'city_name' is present and its value <br>
+          c) You will get a 200 response with Job groups and their respective employment data if key 'city_name' is present in the JSON and its value <br>
              is also present in the data.csv.
