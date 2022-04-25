@@ -12,9 +12,8 @@ This is a basic flask application which provides demo for the following HOW TOs:
       <li> Move to the 'app' folder in the repository.</li>
       <li> Type python app.py to spin the server and this should start your flask application :).</li>    
 <ol>
-<br> 
-<br>
-### The code provides 3 endpoints: <br>
+
+# The code provides 3 endpoints: <br>
 **1) '/', (GET)** : a basic home page to get started with
 
 **2) '/skills/reverse-skill-title', (POST)** : <br> 
