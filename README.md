@@ -9,13 +9,13 @@ This is a basic flask application which provides demo for the following HOW TOs:
       <li> Clone this repository to your local storage.</li>
       <li> Open your terminal and navigate to the directory where you cloned this repository.</li>
       <li> Type <strong>pip install -r requirements.txt</strong> in your terminal and hit enter. This downloads all the dependencies required for the flask app to function             properly.</li>
-      <li> Move to the 'app' folder in the repository.</li>
+      <li> Now move to the 'app' folder in the repository by typing cd app.</li>
       <li> Type python app.py to spin the server and this should start your flask application :).</li>    
 </ol>
 
 
 ## The code provides 3 endpoints: <br>
-**1) '/', (GET)** : a basic home page to get started with
+**1) '/', (GET)** : A basic home page to get started with.
 
 **2) '/skills/reverse-skill-title', (POST)** : <br> 
       This endpoint requires input data in **JSON** body with key as 'skill_title'.
