@@ -8,7 +8,7 @@
   <li> <strong>NOTE:</strong> We may need to change the folder structure where we would move all the files
         from the app folder to the aws_demo folder and then get rid of the app folder.
   <li> Create a .ebignore file to tell the aws-eb which files not to include.
-  <li> We will now make changes to the python files. AWS looks for the keyword <strong>application</strong> to find our flask application from our python 
+  <li> We will now make changes to the python files. AWS looks for the keyword <strong>application</strong> to find our flask application instance from our python 
        files. So to adjust with this behavior, we will <strong>change the name of our flask application from app to application in our python files.</strong> 
   <li> In addition to this, we will have to set DEBUG=FALSE, as this application will be deployed on production.
   <li> Now we move back to our terminal with directory aws_demo. 
