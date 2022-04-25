@@ -10,7 +10,7 @@
   <li> Create a .ebignore file to tell the aws-eb which files not to include.
   <li> We will now make changes to the python files. AWS looks for the keyword <strong>application</strong> to find our flask application instance from our python 
        files. So to adjust with this behavior, we will <strong>change the name of our flask application instance from app to application in our python files.</strong> 
-  <li> In addition to this, we will have to set DEBUG=FALSE, as this application will be deployed on production.
+  <li> In addition to this, we will have to set <strong>DEBUG=FALSE</strong>, as this application will be deployed on production.
   <li> Now we move back to our terminal with directory aws_demo. 
   <li> We now initialize our aws_demo repository with the command <strong>eb init -p python-3.7 flask-tutorial --region us-east-2 </strong>.
   <li> Create an environment and deploy our application with the command <strong>eb create flask-env</strong>.
