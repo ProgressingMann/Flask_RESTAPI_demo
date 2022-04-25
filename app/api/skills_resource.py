@@ -53,7 +53,7 @@ class GetDataResource(Resource):
     @gd_blp.arguments(schema=CS, unknown=None)
     @gd_blp.response(status_code=200)
     def post(self, args):
-        if args == {}:
+        if args == {}: # If the key city_name is not present return a 404 response code.
             abort(404, message=f'Please check your input data type and json keys!')
         try:
             schema = CS()

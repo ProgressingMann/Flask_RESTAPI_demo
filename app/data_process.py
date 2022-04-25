@@ -8,20 +8,22 @@ import json
 
 def get_data():
     '''
-    This function is used to load, clean, and transform the data into a Dataframe and 
+    This function is used to load, clean, and transform the data in data.csv into a Dataframe and 
     extract city names with their respective MSA_ID.
 
     Returns:
         df (pd.DataFrame) : Cleaned Dataframe containing data from data.csv with changed column names
         area_codes (dict) : dictionary containing city_name as keys and values as MSA_ID.
     '''
-    df = pd.read_csv('../data.csv')
+    df = pd.read_csv('../data.csv') # Reading the data into pandas DafaFrame
     df.rename(columns={'Metro Area': 'M_Areas', 'Job Group': 'Job_Groups', 
-                    'Total Employment': 'Total_Emp'}, inplace=True)
+                    'Total Employment': 'Total_Emp'}, inplace=True) # Renaming the column names 
 
+     # Replacing missing values with 0 and then converting the Total Employment values to integer.
     df['Total_Emp'] = df['Total_Emp'].replace(np.nan, 0).astype(int)
 
-    area_codes = {}
+    
+    area_codes = {} # Dictionary to store cities with their respective MSA_ID.
     for area in df['M_Areas'].unique():
         for city in area.split(',')[0].split('-'):
             area_codes[city.lower()] = (df[df['M_Areas'] == area]['MSA_ID']).unique()[0]
