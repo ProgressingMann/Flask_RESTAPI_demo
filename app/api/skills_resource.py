@@ -52,7 +52,7 @@ def home():
 class GetDataResource(Resource):
     @gd_blp.arguments(schema=CS, unknown=None)
     @gd_blp.response(status_code=200)
-    def get(self, args):
+    def post(self, args):
         if args == {}:
             abort(404, message=f'Please check your input data type and json keys!')
         try:

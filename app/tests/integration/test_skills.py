@@ -47,7 +47,7 @@ def test_invalid_data_key(client):
     Return a 404 status code when key 'city_name' is not found.
     '''
     data = {'city': 'new york'}
-    response = client.get('/get_data', json=data)
+    response = client.post('/get_data', json=data)
     assert response.status_code == 404
     assert b'Please check your input data type and json keys!' in response.data
 
@@ -58,7 +58,7 @@ def test_city_not_found(client):
     Then it Returns a 404 status code.
     '''
     data = {'city_name' : 'boston'}
-    response = client.get('/get_data', json=data, headers=headers)
+    response = client.post('/get_data', json=data, headers=headers)
     assert response.status_code == 404
     assert b'Given city does not exist!' in response.data
 
@@ -70,7 +70,7 @@ def test_valid_data(client):
     Return a 200 status code with job groups and total employment data.
     '''
     data = {'city_name' : 'new york'}
-    response = client.get('/get_data', json=data, headers=headers)
+    response = client.post('/get_data', json=data, headers=headers)
     response_dict = json.loads(response.data)
 
     assert response.status_code == 200
